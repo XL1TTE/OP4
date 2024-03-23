@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="OP4.Components.TextGenerationMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OP4.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="WhiteSmoke">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Margin="25">
+            <TextBox Text="{Binding GeneratedText}" TextWrapping="Wrap"/>
+        </Grid>
+        <Grid Grid.Column="1" Margin="0 25 10 25">
+            <StackPanel Margin="0 60 0 0">
+                <TextBlock Text="Укажите длинну текста в предложениях"/>
+                <TextBox Width="160" HorizontalAlignment="Left" Margin="0 10 0 0"
+                         Text="{Binding SentanceCount}"/>
+                <TextBlock Text="Выберите регистр:" Margin="0 10 0 0"/>
+                <ComboBox  Margin="0 10 0 0" Width="160" HorizontalAlignment="Left"
+                           ItemsSource="{Binding TextCases}"
+                           SelectedValue="{Binding ChosenTextCase}"/>
+                <StackPanel  Margin="0 20 0 0" Orientation="Horizontal" >
+                    <CheckBox IsChecked="{Binding IsTextRandom}"/>
+                    <TextBlock Text="Случайный выбор" Margin="5 0 0 0"/>
+                </StackPanel>
+                <Button Content="Сгенерировать текст" Width="140" Height="40"
+                         Margin="0 20 0 0"
+                        Command="{Binding GenerateSomeText}"/>
+                <Button FontStretch="SemiExpanded" Width="140" Height="40"
+                         Margin="0 20 0 0"
+                        Command="{Binding NavigateToDataDictionaryView}">
+                    <TextBlock Text="Посмотреть словарь данных" TextWrapping="Wrap" HorizontalAlignment="Center" 
+                               TextAlignment="Center" 
+                               VerticalAlignment="Center"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

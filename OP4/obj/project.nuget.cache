@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "cDmpkD7H02Nyv+rKfw2yhIZD4wpQ5A+EwGSQ5OkCnfoiiNNQAEMccvDV30RTv5omjJcZmKbYJZZgXr+uziYBkA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Artyom\\source\\repos\\OP4\\OP4\\OP4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.4\\microsoft.netcore.platforms.3.1.4.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\scottplot\\4.1.71\\scottplot.4.1.71.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\scottplot.wpf\\4.1.71\\scottplot.wpf.4.1.71.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\system.drawing.common\\4.7.2\\system.drawing.common.4.7.2.nupkg.sha512",
+    "C:\\Users\\Artyom\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
