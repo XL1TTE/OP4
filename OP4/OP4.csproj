@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Images\InfoPlots\" />
+    <Folder Include="Images\" />
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>

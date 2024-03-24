@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Artyom\source\repos\OP4\OP4\App.xaml
-71991818877
+11807513071
 
-16-616432795
+181620658696
 199580967652
-Components\NavButtonsHorisontalPanel.xaml;Components\TextGenerationMenu.xaml;Components\TextInformationMenu.xaml;MVVM\View\DataDictionaryView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\TextGeneratorView.xaml;Styles\NavigationButtonStyle.xaml;
+Components\DataDictionaryAddPanel.xaml;Components\NavButtonsHorisontalPanel.xaml;Components\TextGenerationMenu.xaml;Components\TextInformationMenu.xaml;Components\WordsDictionaryDataList.xaml;MVVM\View\DataDictionaryView.xaml;MVVM\View\MainWindow.xaml;MVVM\View\TextGeneratorView.xaml;Styles\AddButtonStyle.xaml;Styles\NavigationButtonStyle.xaml;Styles\TextEnterFieldStyle.xaml;
 
 False
 

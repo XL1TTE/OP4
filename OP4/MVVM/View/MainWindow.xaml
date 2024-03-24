@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OP4.MVVM.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        MinHeight="500" MinWidth="1100"
+        Title="MainWindow" Height="500" Width="1100">
     <Grid>
         <ContentControl Content="{Binding Navigation.CurrentViewModel}"/>
     </Grid>

@@ -2,12 +2,15 @@
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Printing;
 using System.Runtime.CompilerServices;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using ScottPlot;
+using ScottPlot.MinMaxSearchStrategies;
 
 namespace OP4.MVVM.Model
 {
@@ -64,7 +67,6 @@ namespace OP4.MVVM.Model
 
         public Dictionary<String, int> FreqOfWords;
 
-        public Dictionary<int, ObservableCollection<String>> DataDictionary;
 
         public ObservableCollection <String> FirstSentanceCollection = new ObservableCollection<String>()
         {
@@ -82,6 +84,8 @@ namespace OP4.MVVM.Model
         {
             "выплаты и поощерения"
         };
+
+        private Dictionary<int, ObservableCollection<String>> DataDictionary;
 
         public enum Textregisters
         {
@@ -222,6 +226,49 @@ namespace OP4.MVVM.Model
         {
             int UniqWordCount = FreqOfWords.Count - 1;
             return $"Общее кол-во уникальных слов: {UniqWordCount}";
+        }
+
+        public void SaveDataFunc()
+        {
+            Stream stream = null;
+            try
+            {
+                stream = File.Open("DataDictionary.bin", FileMode.Create);
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                binaryFormatter.Serialize(stream, DataDictionary);
+                stream.Close();
+            }
+            finally
+            {
+                if (stream != null)
+                    stream.Close();
+            }
+        }
+
+        public void LoadDataFunc()
+        {
+            Stream stream = null;
+            try
+            {
+                stream = File.Open("DataDictionary.bin", FileMode.Open);
+                BinaryFormatter bf = new BinaryFormatter();
+                DataDictionary = (Dictionary<int, ObservableCollection<String>>)bf.Deserialize(stream);
+            }
+            finally
+            {
+                if (stream != null)
+                    stream.Close();
+            }
+            LoadFromDataDictionary();
+
+        }
+
+        private void LoadFromDataDictionary()
+        {
+            FirstSentanceCollection = DataDictionary[1];
+            SecondSentanceCollection = DataDictionary[2];
+            ThirdtSentanceCollection = DataDictionary[3];
+            FourthSentanceCollection = DataDictionary[4];
         }
     }
 }

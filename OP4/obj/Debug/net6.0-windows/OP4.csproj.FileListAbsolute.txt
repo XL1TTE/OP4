@@ -37,3 +37,9 @@ C:\Users\Artyom\source\repos\OP4\OP4\obj\Debug\net6.0-windows\Components\TextInf
 C:\Users\Artyom\source\repos\OP4\OP4\obj\Debug\net6.0-windows\Components\TextInformationMenu.baml
 C:\Users\Artyom\source\repos\OP4\OP4\bin\Debug\net6.0-windows\ScottPlot.dll
 C:\Users\Artyom\source\repos\OP4\OP4\bin\Debug\net6.0-windows\ScottPlot.WPF.dll
+C:\Users\Artyom\source\repos\OP4\OP4\obj\Debug\net6.0-windows\Styles\TextEnterFieldStyle.baml
+C:\Users\Artyom\source\repos\OP4\OP4\obj\Debug\net6.0-windows\Components\DataDictionaryAddPanel.g.cs
+C:\Users\Artyom\source\repos\OP4\OP4\obj\Debug\net6.0-windows\Components\DataDictionaryAddPanel.baml
+C:\Users\Artyom\source\repos\OP4\OP4\obj\Debug\net6.0-windows\Styles\AddButtonStyle.baml
+C:\Users\Artyom\source\repos\OP4\OP4\obj\Debug\net6.0-windows\Components\WordsDictionaryDataList.g.cs
+C:\Users\Artyom\source\repos\OP4\OP4\obj\Debug\net6.0-windows\Components\WordsDictionaryDataList.baml

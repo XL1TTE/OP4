@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Components\DataDictionaryAddPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\NavButtonsHorisontalPanel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -14,6 +17,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\TextInformationMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\WordsDictionaryDataList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\DataDictionaryView.xaml.cs">
@@ -24,6 +30,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Components\DataDictionaryAddPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\NavButtonsHorisontalPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -31,6 +40,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\TextInformationMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\WordsDictionaryDataList.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\DataDictionaryView.xaml">
@@ -42,7 +54,13 @@
     <Page Update="MVVM\View\TextGeneratorView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Styles\AddButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles\NavigationButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\TextEnterFieldStyle.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

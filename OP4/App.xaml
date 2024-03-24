@@ -20,6 +20,8 @@
 
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/NavigationButtonStyle.xaml"/>
+                <ResourceDictionary Source="Styles/TextEnterFieldStyle.xaml"/>
+                <ResourceDictionary Source="Styles/AddButtonStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
         
